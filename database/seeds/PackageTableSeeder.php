@@ -22,11 +22,11 @@ class PackageTableSeeder extends Seeder
         for($i = 0; $i < 30; $i++) {
             $package = new Package();
 
-            $package->Destination = $faker->words();
-            $package->State = $faker->words();
-            $package->Days = $faker->numberBetween(1, 21);
+            $package->Destination = $faker->word();
+            $package->State = $faker->word();
+            $package->Days = $faker->randomDigit();
             $package->Treatment = $faker->word();
-            $package->Price = $faker->numberBetween(100, 2000);
+            $package->Price = $faker->randomDigit();
 
             $package->save();
         }
