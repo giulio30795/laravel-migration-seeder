@@ -23,7 +23,7 @@ class PackageTableSeeder extends Seeder
             $package = new Package();
 
             $package->Destination = $faker->words();
-            $package->Destination = $faker->words();
+            $package->State = $faker->words();
             $package->Days = $faker->numberBetween(1, 21);
             $package->Treatment = $faker->word();
             $package->Price = $faker->numberBetween(100, 2000);
